@@ -20,6 +20,6 @@
               [pageSizeOptions]="pageSizeOptions"
               (page)="onChangePage($event)"
               aria-label="Select page"
-              *ngIf = "posts.length > 0 && !isLoading">
+              *ngIf = "posts.length > 0">
 </mat-paginator>
 <p class="info-text mat-body-1" *ngIf = "posts.length <= 0 && !isLoading">No Posts added yet</p>
